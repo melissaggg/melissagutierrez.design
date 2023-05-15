@@ -390,7 +390,6 @@ p {
     width: 100%;
 }
 
-/*Logo and date (used > 800) *less than 800 just do logo and the date under it**/
 .intro {
     margin-top: 15px;
     display: grid;
