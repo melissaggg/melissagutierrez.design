@@ -72,6 +72,8 @@ nav .logo {
     margin-left: 12px;
     padding-top: 4px;
     overflow: hidden;
+
+    font-size: 25px;
 }
 
 .logo #mg {
@@ -230,10 +232,6 @@ h1 {
     font-weight: 700;
     font-size: 64px;
     margin: 0px;
-}
-
-.MG {
-    border: none;
 }
 
 p {
@@ -446,22 +444,29 @@ p {
         margin: 0 auto;
     }
 
+    .MG {
+        border: 1.5px solid black;
+        width: 15%;
+
+        text-align: center;
+        display: block;
+        margin: auto;
+        line-height: 64px;
+    }
 
     .logo {
         box-sizing: border-box;
         height: 100%;
-        width: 15%;
-        border: 1.5px solid black;
+        border: none;
         border-bottom: none;
 
         text-align: center;
         display: block;
         margin: auto;
-        line-height: 70px;
 
         font-family: 'Syne', sans-serif;
         font-weight: 800;
-        font-size: 35px;
+        font-size: 25px;
     }
     .con {
         margin-top: 65px;
