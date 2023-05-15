@@ -187,12 +187,14 @@ nav .logo {
 }
 
 .btnlogo1 {
-    width: 100%;
+    width: 90%;
+    margin-left: 25px;
     border: none;
 }
 
 .btnlogo2 {
-    width: 80%;
+    width: 90%;
+    margin-left: 25px;
     border: none;
 }
 .partalt {
