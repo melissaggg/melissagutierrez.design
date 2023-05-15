@@ -226,7 +226,7 @@ p {
 /*Text sections (used at all times)*/
 .break {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.1fr 2fr;
     column-gap: 0px;
 }
 
