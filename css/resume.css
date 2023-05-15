@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400;700;800&display=swap');
+/*font-family: 'Inter', sans-serif;
+font-family: 'Syne', sans-serif;*/
+
+/*Burger menu*/
+nav {
+    margin: 0;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid black;
+}
+
+nav .mainMenu {
+    top: -15px;
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    font-weight: normal;
+    font-family: 'Syne', sans-serif;
+    line-height: 70px;
+    font-size: 30px;
+}
+
+nav .openMenu {
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+    margin: 20px;
+    margin-right: 15px;
+    transform: scale(1.5);
+    padding-top: 7px;
+}
+
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.fa-linkedin {
+    transform: scale(1.5);
+}
+
+.fa-instagram {
+    transform: scale(1.5);
+}
+
+.fa-linkedin:hover {
+    transform: scale(1.6);
+}
+
+.fa-instagram:hover {
+    transform: scale(1.6);
+}
+
+nav .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    margin-left: 12px;
+    padding-top: 4px;
+    overflow: hidden;
+}
+
+.logo #mg {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+@media(max-width: 800px) {
+    nav .mainMenu {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transform: scale(1.7);
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Syne', sans-serif;
+        line-height: 70px;
+        font-size: 30px;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+* {
+    background: #FFFEF2;
+}
+
+/*Navigation for 800 and above*/
+
+.navbar {
+    display: none;
+    box-sizing: 15%;
+    margin: 0 auto;
+    width: 97.2%;
+}
+
+/*Border*/
+
+.box {
+    display: block;
+    margin: 0 auto;
+    width: 97%;
+    border: none;
+}
+
+/*Picture*/
+
+.aboutpic {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Text:
+
+font-family: 'Inter', sans-serif;
+font-family: 'Syne', sans-serif;
+*/
+
+.text {
+    margin-left: 10px;
+    width: 95%;
+}
+
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 25px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.thx {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.con {
+    font-family: 'Syne', sans-serif;
+    background: none;
+    border: 1.5px solid black;
+    font-size: 35px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 800px) {
+    .box {
+        border: 1.5px solid black;
+    }
+    .fa-linkedin {
+        transform: scale(1);
+    }
+
+    .fa-instagram {
+        transform: scale(1);
+    }
+
+    .fa-linkedin:hover {
+        transform: scale(1);
+    }
+
+    .fa-instagram:hover {
+        transform: scale(1);
+    }
+
+    nav {
+        display: none;
+    }
+
+    .aboutpic {
+        width: 125%;
+        display: block;
+        margin: auto;
+        padding-left: 42%;
+    }
+
+    .navbar {
+        display: flex;
+        height: 70px;
+        align-items: center;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .text {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-left: -15px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        margin: 0px;
+    }
+
+    p {
+        font-family: 'Inter', sans-serif;
+        line-height: 25px;
+        font-size: 14px;
+    }
+
+    .thx {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        margin-bottom: -35px;
+    }
+
+    .navbar {
+        display: flex;
+        height: 70px;
+        align-items: center;
+    }
+
+    .backbtn {
+        box-sizing: border-box;
+        height: 100%;
+        width: 10%;
+        border: 1.5px solid black;
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .pages {
+        box-sizing: border-box;
+        height: 100%;
+        width: 60%;
+        border: 1.5px solid black;
+        border-bottom: none;
+        border-right: none;
+
+        display: flex;
+        font-family: 'Syne', sans-serif;
+        line-height: 70px;
+    }
+
+    .about {
+        background: none;
+        border: none;
+
+        font-size: 35px;
+        margin-left: auto;
+    }
+
+    .about {
+        border: none;
+        font-family: 'Syne', sans-serif;
+
+        font-size: 35px;
+        margin-left: auto;
+    }
+
+    .work {
+        font-family: 'Syne', sans-serif;
+        border: none;
+
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .resume {
+        font-family: 'Syne', sans-serif;
+        border: none;
+
+        font-weight: bold;
+
+        font-size: 35px;
+        margin-right: auto;
+    }
+
+    .about:hover {
+        font-weight: bold;
+    }
+
+    .work:hover {
+        font-weight: bold;
+    }
+
+    .resume:hover {
+        font-weight: bold;
+    }
+
+    .links {
+        box-sizing: border-box;
+        height: 100%;
+        width: 15%;
+        border: 1.5px solid black;
+        border-bottom: none;
+        border-right: none;
+
+        padding: 30px;
+        display: flex;
+    }
+
+    #in {
+        margin: 0 auto;
+    }
+
+    #insta {
+        margin: 0 auto;
+    }
+
+    .logo {
+        box-sizing: border-box;
+        height: 100%;
+        width: 15%;
+        border: 1.5px solid black;
+        border-bottom: none;
+
+        text-align: center;
+        display: block;
+        margin: auto;
+        line-height: 70px;
+
+        font-family: 'Syne', sans-serif;
+        font-weight: 800;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .aboutpic {
+        width: 82%;
+        display: block;
+        margin: auto;
+        padding-left: 61.5%;
+    }
+}

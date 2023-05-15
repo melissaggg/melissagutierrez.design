@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400;700;800&display=swap');
+/*font-family: 'Inter', sans-serif;
+font-family: 'Syne', sans-serif;*/
+
+/*Burger menu*/
+nav {
+    margin: 0;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid black;
+}
+
+nav .mainMenu {
+    top: -15px;
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    font-weight: normal;
+    font-family: 'Syne', sans-serif;
+    line-height: 70px;
+    font-size: 30px;
+}
+
+nav .openMenu {
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+    margin: 20px;
+    margin-right: 15px;
+    transform: scale(1.5);
+    padding-top: 7px;
+}
+
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.fa-linkedin {
+    transform: scale(1.5);
+}
+
+.fa-instagram {
+    transform: scale(1.5);
+}
+
+.fa-linkedin:hover {
+    transform: scale(1.6);
+}
+
+.fa-instagram:hover {
+    transform: scale(1.6);
+}
+
+nav .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    margin-left: 12px;
+    padding-top: 4px;
+    overflow: hidden;
+}
+
+.logo #mg {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+@media(max-width: 800px) {
+    nav .mainMenu {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transform: scale(1.7);
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Syne', sans-serif;
+        line-height: 70px;
+        font-size: 30px;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+* {
+    background: #FFFEF2;
+}
+
+/*Navigation for 800 and above*/
+
+.navbar {
+    display: none;
+    box-sizing: 15%;
+    margin: 0 auto;
+    width: 97.2%;
+}
+
+
+/*Border*/
+.box {
+    border: 1.5px solid black;
+    display: none;
+    margin: auto;
+    width: 97%;
+}
+
+.box1 {
+    display: block;
+    width: 97%;
+    border: none;
+}
+
+/*Picture*/
+
+.aboutpic {
+    width: 100%;
+    margin: auto;
+    height: auto;
+
+    margin-top: -450px;
+
+    background-color: transparent;
+
+    z-index: 1;
+}
+
+/*Text:
+
+font-family: 'Inter', sans-serif;
+font-family: 'Syne', sans-serif;
+*/
+.text {
+    margin-left: 25px;
+    margin-right: 25px;
+    z-index: 3;
+}
+
+
+.text700 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    z-index: 3;
+
+}
+
+.text400 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    z-index: 3;
+
+}
+
+#faderight {
+    animation-fill-mode: both;
+    text-align: right;
+    animation-delay: .5s;
+    animation-name: fade-in;
+    animation-duration: 5s;
+
+    background-color: transparent;
+}
+
+#typeright {
+    animation-fill-mode: both;
+    text-align: right;
+    animation-delay: 1s;
+    animation-name: typing;
+    animation-duration: 2s;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: transparent;
+}
+
+#fade {
+    animation-fill-mode: both;
+    animation-delay: 2.5s;
+    animation-name: fade-in;
+    animation-duration: 5s;
+
+    background-color: transparent;
+}
+
+#type {
+    animation-fill-mode: both;
+    animation-delay: 3.5s;
+    animation-name: typing;
+    animation-duration: 1.9s;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: transparent;
+}
+
+/*cursor blinking*/
+@keyframes cursor {
+    50% { border-color: black}
+}
+
+/*cursor blinking*/
+@keyframes typing {
+    from { width: 0}
+}
+
+@keyframes fade-in {
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+
+@media only screen and (min-width: 800px) {
+    .text {
+        margin-left: 25px;
+        margin-right: 25px;
+
+        z-index: 3;
+    }
+
+    .box1 {
+        display: none;
+        width: 97%;
+        border: none;
+    }
+
+    .box {
+        display: block;
+        border: 1.5px solid black;
+    }
+
+    .aboutpic {
+        position: absolute;
+        padding-left: 5%;
+
+        margin-top: -650px;
+        width: 80%;
+    }
+
+    .text700 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: 55px;
+        z-index: 3;
+    }
+
+    .text400 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 400;
+        font-size: 55px;
+        z-index: 3;
+
+    }
+
+    .fa-linkedin {
+        transform: scale(1);
+    }
+
+    .fa-instagram {
+        transform: scale(1);
+    }
+
+    .fa-linkedin:hover {
+        transform: scale(1);
+    }
+
+    .fa-instagram:hover {
+        transform: scale(1);
+    }
+
+    nav {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        height: 70px;
+        align-items: center;
+    }
+
+    .navbar {
+        display: flex;
+        height: 70px;
+        align-items: center;
+    }
+
+    .backbtn {
+        box-sizing: border-box;
+        height: 100%;
+        width: 10%;
+        border: 1.5px solid black;
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .pages {
+        box-sizing: border-box;
+        height: 100%;
+        width: 70%;
+        border: 1.5px solid black;
+        border-bottom: none;
+        border-right: none;
+
+        display: flex;
+        font-family: 'Syne', sans-serif;
+        line-height: 70px;
+    }
+
+    .about {
+        border: none;
+        font-family: 'Syne', sans-serif;
+
+        font-size: 35px;
+        margin-left: auto;
+    }
+
+    .work {
+        font-family: 'Syne', sans-serif;
+        border: none;
+
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .resume {
+        font-family: 'Syne', sans-serif;
+        border: none;
+
+        font-size: 35px;
+        margin-right: auto;
+    }
+
+    .about:hover {
+        font-weight: bold;
+    }
+
+    .work:hover {
+        font-weight: bold;
+    }
+
+    .resume:hover {
+        font-weight: bold;
+    }
+
+    .links {
+        box-sizing: border-box;
+        height: 100%;
+        width: 15%;
+        border: 1.5px solid black;
+        border-bottom: none;
+        border-right: none;
+
+        padding: 30px;
+        display: flex;
+    }
+
+    #in {
+        margin: 0 auto;
+    }
+
+    #insta {
+        margin: 0 auto;
+    }
+
+    .logo {
+        box-sizing: border-box;
+        height: 100%;
+        width: 15%;
+        border: 1.5px solid black;
+        border-bottom: none;
+
+        text-align: center;
+        display: block;
+        margin: auto;
+        line-height: 70px;
+
+        font-family: 'Syne', sans-serif;
+        font-weight: 800;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .box1 {
+        display: none;
+        width: 97%;
+        border: none;
+    }
+
+    .box {
+        display: block;
+        border: 1.5px solid black;
+    }
+
+    .aboutpic {
+        position: absolute;
+        padding-left: 5%;
+        margin-top: -700px;
+        width: 80%;
+    }
+
+    .text700 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: 65px;
+        z-index: 3;
+    }
+
+    .text400 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 400;
+        font-size: 65px;
+        z-index: 3;
+
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .box1 {
+        display: none;
+        width: 97%;
+        border: none;
+    }
+
+    .box {
+        display: block;
+        border: 1.5px solid black;
+    }
+
+    .aboutpic {
+        position: absolute;
+        padding-left: 20%;
+        margin-top: -725px;
+        width: 56%;
+    }
+
+    .text700 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: 65px;
+        z-index: 3;
+    }
+
+    .text400 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 400;
+        font-size: 65px;
+        z-index: 3;
+
+    }
+}

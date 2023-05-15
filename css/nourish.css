@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400;700;800&display=swap');
+/*font-family: 'Inter', sans-serif;
+font-family: 'Syne', sans-serif;*/
+
+/*Burger menu*/
+nav {
+    margin: 0;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid black;
+}
+
+nav .mainMenu {
+    top: -15px;
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    font-weight: normal;
+    font-family: 'Syne', sans-serif;
+    line-height: 70px;
+    font-size: 30px;
+}
+
+nav .openMenu {
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+    margin: 20px;
+    margin-right: 15px;
+    transform: scale(1.5);
+    padding-top: 7px;
+}
+
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.fa-linkedin {
+    transform: scale(1.5);
+}
+
+.fa-instagram {
+    transform: scale(1.5);
+}
+
+.fa-linkedin:hover {
+    transform: scale(1.6);
+}
+
+.fa-instagram:hover {
+    transform: scale(1.6);
+}
+
+nav .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    margin-left: 12px;
+    padding-top: 4px;
+    overflow: hidden;
+}
+
+.logo #mg {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+@media(max-width: 800px) {
+    nav .mainMenu {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transform: scale(1.7);
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Syne', sans-serif;
+        line-height: 70px;
+        font-size: 30px;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+* {
+    background: #FFFEF2;
+}
+
+/*Navigation for 800 and above*/
+.navbar {
+    display: none;
+    box-sizing: 15%;
+    margin: 0 auto;
+    width: 97.2%;
+}
+
+.box {
+    display: block;
+    margin: 0 auto;
+    width: 97%;
+    border: none;
+}
+
+/*STYLE*/
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    text-align: right;
+    font-size: 30px;
+}
+
+h1.centered {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
+}
+
+h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin: auto;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+/*STYLE - Specials*/
+.list {
+    display: list-item;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.lead {
+    font-size: 25px;
+}
+
+.along {
+    margin-top: -15px;
+    font-size: 18px;
+}
+
+#long {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.compaudit {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.lofilink {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.hifilink {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*SECTIONS*/
+/*Text sections (used at all times)*/
+.break {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 0px;
+}
+
+/*My role: Project Lead (used at all times)*/
+.role {
+    display: grid;
+    grid-template-columns: .15fr 1fr;
+}
+
+/*Parameters cross (used at all times)*/
+.parameters {
+    display: grid;
+    width: 99.5%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+}
+.logotext {
+    width: 100%;
+    text-align: center;
+    border: 1.5px solid black;
+}
+#l1 {
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    padding-top: 10px;
+}
+#l2 {
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    padding-top: 10px;
+}
+#l3 {
+    border-top: 0;
+    border-right: 0;
+    padding-top: 10px;
+}
+#l4 {
+    border-top: 0;
+    border-left: 0;
+    padding-top: 10px;
+}
+#paricon {
+    line-height: 40px;
+    padding-left: 5px;
+}
+
+/*Responsive design (used < 800)*/
+.rddev {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0;
+}
+
+.responsivepics {
+    display: none;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 0;
+}
+
+.rdpics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0;
+}
+
+.pics {
+    width: 100%;
+}
+
+.rdbreak {
+    display: grid;
+    grid-template-columns: 1.25fr 2fr;
+    column-gap: 0px;
+}
+
+.findings800 {
+    display: none;
+}
+
+/*Image sizing (used at all times *reduce a lil > 1000*)*/
+.fullimg {
+    width: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 800px) {
+    .box {
+        border: 1.5px solid black;
+        width: 97%;
+    }
+    .fa-linkedin {
+        transform: scale(1);
+    }
+
+    .fa-instagram {
+        transform: scale(1);
+    }
+
+    .fa-linkedin:hover {
+        transform: scale(1);
+    }
+
+    .fa-instagram:hover {
+        transform: scale(1);
+    }
+
+    nav {
+        display: none;
+    }
+
+/*Text sections (used at all times)*/
+.break {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    column-gap: 0px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+/*Text sections (used at all times)*/
+.break {
+    display: grid;
+}
+
+/*My role: Project Lead (used at all times)*/
+.role {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+}
+
+/*Findings table (used > 800)*/
+.findings800 {
+    margin: auto;
+    width: 98%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+} .f {width: 100%;} #right {border-right: 1.5px solid black;} .find {width: 95%;}
+
+.rdbreak{
+    display: none;
+}
+
+/*Responsive design pictures (used > 800)*/
+.rdpics {
+    width: 100%;
+}
+
+/*Logo and date (used > 800) *less than 800 just do logo and the date under it**/
+.intro {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 0;
+}
+
+.responsivepics {
+    display: grid;
+}
+
+.rddev {
+    display: grid;
+}
+
+ .box {
+        display: block;
+    }
+
+    .aboutpic {
+        display: block;
+        width: 90%;
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .backbtn {
+        box-sizing: border-box;
+        height: 100%;
+        width: 10%;
+        border: 1.5px solid black;
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .pages {
+        box-sizing: border-box;
+        height: 100%;
+        width: 60%;
+        border: 1.5px solid black;
+        border-bottom: none;
+        border-right: none;
+
+        display: flex;
+        font-family: 'Syne', sans-serif;
+        line-height: 70px;
+    }
+
+    .about {
+        border: none;
+        font-family: 'Syne', sans-serif;
+
+        font-size: 35px;
+        margin-left: auto;
+    }
+
+    .work {
+        font-family: 'Syne', sans-serif;
+        border: none;
+
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .resume {
+        font-family: 'Syne', sans-serif;
+        border: none;
+
+        font-size: 35px;
+        margin-right: auto;
+    }
+
+    .about:hover {
+        font-weight: bold;
+    }
+
+    .work:hover {
+        font-weight: bold;
+    }
+
+    .resume:hover {
+        font-weight: bold;
+    }
+
+    .links {
+        box-sizing: border-box;
+        height: 100%;
+        width: 15%;
+        border: 1.5px solid black;
+        border-bottom: none;
+        border-right: none;
+
+        padding: 30px;
+        display: flex;
+    }
+
+    #in {
+        margin: 0 auto;
+    }
+
+    #insta {
+        margin: 0 auto;
+    }
+
+    .mg {
+        box-sizing: border-box;
+        height: 100%;
+        width: 15%;
+        border: 1.5px solid black;
+        border-bottom: none;
+
+        text-align: center;
+        display: block;
+        margin: auto;
+        line-height: 70px;
+
+        font-family: 'Syne', sans-serif;
+        font-weight: 800;
+        font-size: 35px;
+    }
+
+
+    h1 {
+        padding: 10px;
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        text-align: right;
+        font-size: 30px;
+    }
+
+    h1.centered {
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        margin: auto;
+    }
+
+    p {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+    }
+
+    .par {
+        padding: 10px;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        margin: auto;
+        width: 90%
+    }
+
+    /*STYLE - Specials*/
+    .list {
+        display: list-item;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+    }
+
+    .lead {
+        font-size: 28px;
+    }
+
+    .along {
+        padding-left: 10px;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .compaudit {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        padding-bottom: 5px;
+    }
+
+    .lofilink {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .hifilink {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .fullimg {
+        display: block;
+        margin: auto;
+        width: 75%;
+        padding-bottom: 15px;
+    }
+
+    #nourish {
+        width: 100%;
+    }
+}
+
