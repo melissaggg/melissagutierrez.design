@@ -183,22 +183,18 @@ nav .logo {
 
 .btnlogo {
     width: 100%;
-    margin: auto;
     border: none;
 }
 
 .btnlogo1 {
     width: 100%;
-    margin: auto;
     border: none;
 }
 
 .btnlogo2 {
-    width: 100%;
-    margin: auto;
+    width: 80%;
     border: none;
 }
-
 .partalt {
     border: 1.5px solid black;
     margin-bottom: 15px;
